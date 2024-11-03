@@ -42,7 +42,7 @@ const navigation = {
         { name: 'SEO Services', href: '/services/seo' },
         { name: 'Web Development', href: '/services/web-development' },
         { name: 'Creative Services', href: '/services/creative' },
-        { name: 'Consultancy', href: '/consultancy' }
+        { name: 'Consultancy', href: '/services/consultancy' }
       ],
     },
     {

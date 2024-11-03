@@ -13,35 +13,35 @@ export const metadata: Metadata = {
   keywords: "creative agency dubai, photography dubai, automotive photography dubai, branding agency dubai",
 };
 
-const breadcrumbs = [
-  { title: "Services", href: "/services" },
-  { title: "Creative Services", href: "/services/creative" }
-];
+export default function Page() {
+  const breadcrumbs = [
+    { title: "Services", href: "/services" },
+    { title: "Creative Services", href: "/services/creative" }
+  ];
 
-const services = [
-  {
-    icon: <Camera className="w-12 h-12 mb-4 text-[#F36523]" />,
-    title: "Photography",
-    description: "Professional photography services for automotive, real estate, and commercial projects"
-  },
-  {
-    icon: <Video className="w-12 h-12 mb-4 text-[#F36523]" />,
-    title: "Videography",
-    description: "High-quality video production for corporate, promotional, and social media content"
-  },
-  {
-    icon: <PenTool className="w-12 h-12 mb-4 text-[#F36523]" />,
-    title: "Graphic Design",
-    description: "Creative design solutions for branding, marketing materials, and digital assets"
-  },
-  {
-    icon: <Paintbrush className="w-12 h-12 mb-4 text-[#F36523]" />,
-    title: "Branding",
-    description: "Comprehensive branding services to establish and elevate your market presence"
-  }
-];
+  const services = [
+    {
+      icon: <Camera className="w-12 h-12 mb-4 text-[#F36523]" />,
+      title: "Photography",
+      description: "Professional photography services for automotive, real estate, and commercial projects"
+    },
+    {
+      icon: <Video className="w-12 h-12 mb-4 text-[#F36523]" />,
+      title: "Videography",
+      description: "High-quality video production for corporate, promotional, and social media content"
+    },
+    {
+      icon: <PenTool className="w-12 h-12 mb-4 text-[#F36523]" />,
+      title: "Graphic Design",
+      description: "Creative design solutions for branding, marketing materials, and digital assets"
+    },
+    {
+      icon: <Paintbrush className="w-12 h-12 mb-4 text-[#F36523]" />,
+      title: "Branding",
+      description: "Comprehensive branding services to establish and elevate your market presence"
+    }
+  ];
 
-export default function CreativePage() {
   return (
     <main className="min-h-screen bg-[#1C1C1C] text-[#F3F0CE]">
       {/* Hero Section */}
@@ -52,7 +52,7 @@ export default function CreativePage() {
             <Breadcrumbs items={breadcrumbs} />
           </div>
           <div className="max-w-3xl">
-            <h1 className={`${playfair.className} text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#F3F0CE]`}>
+            <h1 className={`${playfair.className} text-4xl md:text-5xl lg:text-6xl font-bold mb-6`}>
               Creative Services
             </h1>
             <p className="text-xl mb-8 text-[#F3F0CE]/80">
@@ -72,7 +72,7 @@ export default function CreativePage() {
           {services.map((service, index) => (
             <div key={index} className="p-6 border border-[#F3F0CE]/10 rounded-lg bg-[#1C1C1C] hover:bg-[#1C1C1C]/70 transition-all">
               {service.icon}
-              <h3 className={`${playfair.className} text-2xl font-bold mb-3 text-[#F3F0CE]`}>{service.title}</h3>
+              <h3 className={`${playfair.className} text-2xl font-bold mb-3`}>{service.title}</h3>
               <p className="text-[#F3F0CE]/70">{service.description}</p>
             </div>
           ))}
@@ -84,7 +84,7 @@ export default function CreativePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6 text-[#F3F0CE]`}>
+              <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6`}>
                 Professional Photography Services
               </h2>
               <p className="text-[#F3F0CE]/70 mb-6">
@@ -135,7 +135,7 @@ export default function CreativePage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6 text-[#F3F0CE]`}>
+              <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6`}>
                 Design & Branding Excellence
               </h2>
               <p className="text-[#F3F0CE]/70 mb-6">
@@ -168,7 +168,7 @@ export default function CreativePage() {
       <section className="py-20 border-t border-[#F3F0CE]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6 text-[#F3F0CE]`}>
+            <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6`}>
               Video Production Services
             </h2>
             <p className="text-[#F3F0CE]/70">
@@ -177,15 +177,15 @@ export default function CreativePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 border border-[#F3F0CE]/10 rounded-lg bg-[#1C1C1C] hover:bg-[#1C1C1C]/70 transition-all">
-              <h3 className={`${playfair.className} text-xl font-bold mb-4 text-[#F3F0CE]`}>Corporate Videos</h3>
+              <h3 className={`${playfair.className} text-xl font-bold mb-4`}>Corporate Videos</h3>
               <p className="text-[#F3F0CE]/70">Professional corporate videos that showcase your company's values, culture, and achievements.</p>
             </div>
             <div className="p-6 border border-[#F3F0CE]/10 rounded-lg bg-[#1C1C1C] hover:bg-[#1C1C1C]/70 transition-all">
-              <h3 className={`${playfair.className} text-xl font-bold mb-4 text-[#F3F0CE]`}>Product Videos</h3>
+              <h3 className={`${playfair.className} text-xl font-bold mb-4`}>Product Videos</h3>
               <p className="text-[#F3F0CE]/70">Stunning product demonstrations and promotional videos that highlight your offerings.</p>
             </div>
             <div className="p-6 border border-[#F3F0CE]/10 rounded-lg bg-[#1C1C1C] hover:bg-[#1C1C1C]/70 transition-all">
-              <h3 className={`${playfair.className} text-xl font-bold mb-4 text-[#F3F0CE]`}>Social Media Content</h3>
+              <h3 className={`${playfair.className} text-xl font-bold mb-4`}>Social Media Content</h3>
               <p className="text-[#F3F0CE]/70">Engaging short-form videos optimized for various social media platforms.</p>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function CreativePage() {
       {/* CTA Section */}
       <section className="py-20 border-t border-[#F3F0CE]/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6 text-[#F3F0CE]`}>
+          <h2 className={`${playfair.className} text-3xl lg:text-4xl font-bold mb-6`}>
             Ready to Transform Your Brand?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-[#F3F0CE]/80">
