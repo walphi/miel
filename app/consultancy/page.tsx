@@ -1,15 +1,22 @@
 import { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
-import { Brain, Target, Users, LineChart, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Image from "next/image";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Consultancy Dubai | Strategic Marketing Services",
-  description: "Expert digital marketing consultancy in Dubai offering strategic guidance and implementation services. Transform your digital presence.",
-  keywords: "marketing consultancy dubai, digital marketing consultancy, strategic marketing dubai, marketing strategy",
+  title: "Consultancy Services Dubai | Business Solutions",
+  description: "Expert consultancy services in Dubai offering strategic business solutions and guidance.",
 };
 
-// Rest of the consultancy page code...
+export default function ConsultancyPage() {
+  return (
+    <main className="min-h-screen bg-[#1C1C1C] text-[#F3F0CE]">
+      {/* Content goes here */}
+      <h1>Consultancy Services</h1>
+    </main>
+  );
+}
