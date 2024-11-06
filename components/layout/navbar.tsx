@@ -15,34 +15,27 @@ const navigation = {
   main: [
     { name: 'Home', href: '/' },
     {
-      name: 'Solutions',
+      name: 'Services',
       items: [
         {
           name: 'Digital Marketing',
-          href: '/solutions/digital-marketing',
+          href: '/services/digital-marketing',
           items: [
-            { name: 'Strategic Digital Marketing', href: '/solutions/digital-marketing/strategic' },
-            { name: 'AI-Powered Analytics', href: '/solutions/digital-marketing/analytics' },
-            { name: 'SEO Services', href: '/solutions/digital-marketing/seo' },
-            { name: 'Social Media Marketing', href: '/solutions/digital-marketing/social-media' },
-            { name: 'Content Marketing', href: '/solutions/digital-marketing/content' },
-            { name: 'Performance Marketing', href: '/solutions/digital-marketing/performance' },
-            { name: 'Email Marketing Automation', href: '/solutions/digital-marketing/email' }
+            { name: 'Strategic Digital Marketing', href: '/services/digital-marketing/strategic' },
+            { name: 'Performance Marketing', href: '/services/digital-marketing/performance' },
+            { name: 'SEO Services', href: '/services/digital-marketing/seo' },
+            { name: 'Social Media Marketing', href: '/services/digital-marketing/social-media' },
+            { name: 'Email Marketing Automation', href: '/services/digital-marketing/email' }
+            
+            
           ]
         },
-        { name: 'Real Estate Marketing', href: '/solutions/real-estate' },
-        { name: 'Lead Generation', href: '/solutions/lead-generation' },
-        { name: 'AI Solutions', href: '/solutions/ai' }
-      ],
-    },
-    {
-      name: 'Services',
-      items: [
-        { name: 'Digital Marketing', href: '/services/digital-marketing' },
-        { name: 'SEO Services', href: '/services/seo' },
+        { name: 'Real Estate Marketing', href: '/services/real-estate' },
+        { name: 'Lead Generation', href: '/services/lead-generation' },
+        { name: 'AI Solutions', href: '/services/ai-marketing' },
+        { name: 'Consultancy', href: '/services/consultancy' },
         { name: 'Web Development', href: '/services/web-development' },
-        { name: 'Creative Services', href: '/services/creative' },
-        { name: 'Consultancy', href: '/services/consultancy' }
+        { name: 'Creative Services', href: '/services/creative' }
       ],
     },
     {
@@ -183,7 +176,9 @@ export default function Navbar() {
 
             {/* Get Started Button */}
             <Button className="bg-[#F36523] hover:bg-[#F36523]/90 text-white">
-              Get Started
+              <Link href="/#booking-section">
+                Get Started
+              </Link>
             </Button>
           </div>
 

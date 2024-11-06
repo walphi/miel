@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 };
 
 const breadcrumbs = [
-  { title: "Solutions", href: "/solutions" },
-  { title: "Consultancy", href: "/solutions/consultancy" }
+  { title: "Services", href: "/services" },
+  { title: "Consultancy", href: "/services/consultancy" }
 ];
 
 export default function ConsultancyPage() {
@@ -46,71 +46,110 @@ export default function ConsultancyPage() {
 
       {/* Core Services Section */}
       <section className="py-16 bg-[#1A1A1A]">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-[#F3F0CE]">Expert Consultancy Services</h2>
-              <div className="mb-8 rounded-xl overflow-hidden relative group">
-                <Image
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0"
-                  alt="Digital Marketing Consultation"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-[300px] group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-              </div>
-              <p className="text-[#F3F0CE] mb-6">
-                Our consultancy services combine industry expertise with data-driven insights to help businesses navigate the digital landscape effectively. We provide tailored solutions that address your unique challenges and opportunities, ensuring sustainable growth and competitive advantage.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Digital strategy development",
-                  "Market analysis and insights",
-                  "Performance optimization",
-                  "Technology stack consultation",
-                  "Growth strategy planning"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 mt-2 rounded-full bg-orange-600" />
-                    <p className="text-[#F3F0CE]">{item}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="space-y-12">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h2 className="text-4xl font-bold mb-8 text-[#F3F0CE] leading-tight">
+          Transforming Businesses Through Strategic Consulting
+        </h2>
+        <div className="mb-8 rounded-xl overflow-hidden relative group">
+          <Image
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0"
+            alt="Strategic Consulting Session"
+            width={600}
+            height={400}
+            className="object-cover w-full h-[300px] group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+        </div>
+        <p className="text-[#F3F0CE] text-lg mb-8 leading-relaxed">
+          We don't just offer consultancy – we partner with you to revolutionize your business. Our data-driven approach combines cutting-edge industry insights with practical solutions, helping you navigate the complex digital landscape and stay ahead of the competition.
+        </p>
+        <div className="space-y-6">
+          {[
+            {
+              title: "Strategic Digital Innovation",
+              description: "Comprehensive digital strategy development tailored to your business goals"
+            },
+            {
+              title: "Market Intelligence",
+              description: "Deep-dive analysis and actionable market insights"
+            },
+            {
+              title: "Performance Excellence",
+              description: "Data-driven optimization strategies for maximum ROI"
+            },
+            {
+              title: "Technology Enablement",
+              description: "Expert guidance on technology stack and digital transformation"
+            },
+            {
+              title: "Growth Acceleration",
+              description: "Scalable strategies for sustainable business growth"
+            }
+          ].map((item, index) => (
+            <div key={index} className="flex items-start gap-4 group cursor-pointer">
+              <div className="w-2 h-2 mt-2 rounded-full bg-[#F36523] group-hover:scale-150 transition-transform" />
               <div>
-                <h3 className="text-xl font-bold mb-4 text-[#F3F0CE]">Strategic Analysis</h3>
-                <div className="mb-6 rounded-xl overflow-hidden relative group">
-                  <Image
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                    alt="Strategic Analysis Process"
-                    width={600}
-                    height={300}
-                    className="object-cover w-full h-[250px] group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "Comprehensive market research",
-                    "Competitor analysis",
-                    "Customer journey mapping",
-                    "Digital presence audit",
-                    "Performance metrics review",
-                    "Growth opportunity identification"
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="w-2 h-2 mt-2 rounded-full bg-orange-600" />
-                      <p className="text-[#F3F0CE]">{item}</p>
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-[#F3F0CE] font-semibold mb-1">{item.title}</h3>
+                <p className="text-[#F3F0CE]/80">{item.description}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="space-y-12">
+        <div>
+          <h3 className="text-2xl font-bold mb-6 text-[#F3F0CE]">Strategic Analysis & Planning</h3>
+          <div className="mb-8 rounded-xl overflow-hidden relative group">
+            <Image
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+              alt="Strategic Analysis Process"
+              width={600}
+              height={300}
+              className="object-cover w-full h-[250px] group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Market Research",
+                description: "In-depth analysis of market trends and opportunities"
+              },
+              {
+                title: "Competitor Analysis",
+                description: "Detailed competitive landscape evaluation"
+              },
+              {
+                title: "Customer Journey",
+                description: "Comprehensive mapping of customer touchpoints"
+              },
+              {
+                title: "Digital Audit",
+                description: "Thorough assessment of digital presence"
+              },
+              {
+                title: "Performance Metrics",
+                description: "Advanced analytics and KPI tracking"
+              },
+              {
+                title: "Growth Planning",
+                description: "Strategic roadmap for sustainable growth"
+              }
+            ].map((item, index) => (
+              <div key={index} className="p-4 bg-[#2A2A2A] rounded-lg hover:bg-[#2A2A2A]/80 transition-colors">
+                <h4 className="text-[#F3F0CE] font-semibold mb-2">{item.title}</h4>
+                <p className="text-[#F3F0CE]/80 text-sm">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Expertise Areas Section */}
       <section className="py-16 bg-[#2A2A2A]">

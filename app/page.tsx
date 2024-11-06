@@ -57,6 +57,7 @@ export default function Home() {
         description="Generate high-quality leads with cutting-edge AI technology"
         image="https://145532521.fs1.hubspotusercontent-eu1.net/hubfs/145532521/HomePageSection3.png"
         imagePosition="right"
+        buttonLink="/solutions/lead-generation"
       />
 
       <FeatureSection
