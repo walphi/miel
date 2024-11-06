@@ -48,8 +48,10 @@ export function VideoSlider() {
       {videos.map((video, index) => (
         <SwiperSlide key={index}>
           <div className="relative w-full h-full">
-            <video
-              ref={el => videoRefs.current[index] = el}
+          <video
+              ref={el => {
+                videoRefs.current[index] = el as HTMLVideoElement; // Type assertion added
+              }}
               src={video.url}
               muted
               loop

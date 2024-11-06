@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
-import { Users, Brain, Target, ArrowRight, Lightbulb, ChartBar, Compass, Shield } from "lucide-react";
+import { Users, Brain, Target, ArrowRight, Compass, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Image from "next/image";

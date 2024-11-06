@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext"], // Fixed closing bracket here
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,

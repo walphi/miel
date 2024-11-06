@@ -21,7 +21,6 @@ export default function SearchPage() {
     const timer = setTimeout(() => {
       const searchResults = blogPosts.filter(item => 
         item.title.toLowerCase().includes(query.toLowerCase()) ||
-        item.description?.toLowerCase().includes(query.toLowerCase()) ||
         item.category.toLowerCase().includes(query.toLowerCase()) ||
         item.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase())) ||
         item.content.toLowerCase().includes(query.toLowerCase())
