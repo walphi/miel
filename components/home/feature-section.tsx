@@ -38,7 +38,7 @@ export function FeatureSection({ title, description, image, imagePosition }: Fea
             </p>
             <Button 
               className="bg-[#F36523] hover:bg-[#F36523]/90"
-              onClick={() => window.location.href = '/solutions/lead-generation'}
+              onClick={() => window.location.href = '/services/digital-marketing/performance'}
             >
               Explore more
               <ArrowRight className="ml-2 w-4 h-4" />
